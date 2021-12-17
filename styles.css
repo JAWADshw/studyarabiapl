@@ -118,6 +118,9 @@ i:hover {
     width: 80%;
     font-size: 1.6rem;
   }
+}
+
+@media screen and (max-width: 500px) {
   main {
     display: block;
   }

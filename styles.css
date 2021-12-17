@@ -125,8 +125,7 @@ i:hover {
     display: block;
   }
   .card {
-    margin: 3rem;
-    width: 90%;
+    width: 85%;
     font-size: 1.6rem;
   }
 }

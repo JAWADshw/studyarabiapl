@@ -12,16 +12,6 @@ body {
   font-family: "PT Sans Narrow", sans-serif;
 }
 
-/*    Backgorund images   */
-.main-index-page {
-  background-image: url("images/background..jpg");
-  height: 100vh;
-  color: #102030;
-  font-size: 2rem;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
 
 .logo {
   width: 6rem;

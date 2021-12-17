@@ -1,0 +1,259 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-family: "Playfair Display", serif;
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+/*    Backgorund images   */
+.main-index-page {
+  background-image: url("images/background..jpg");
+  height: 100vh;
+  color: #102030;
+  font-size: 2rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.logo {
+  width: 6rem;
+}
+.main-index-page > div {
+  text-align: center;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+/*   GRID LAYOUT   all pages except contact page */
+.grid-container {
+  display: grid;
+  grid-template-areas: "header" "main" "section" "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 6rem 1fr 1fr 6rem;
+  height: 100vh;
+}
+header {
+  grid-area: header;
+  background: #203040;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+main {
+  margin-top: 0rem;
+  grid-area: main;
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  grid-area: section;
+  display: flex;
+  margin: 2rem;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+section > div,
+main > div {
+  margin: 2rem;
+  text-align: center;
+}
+
+footer {
+  grid-area: footer;
+  background: #203040;
+  font-size: 1.3rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+footer > div:nth-of-type(1) {
+  padding-right: 1rem;
+}
+/*  Common style sheet   */
+header > div > a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin: 1.5rem;
+}
+header > div > a:hover {
+  color: orange;
+  transition: ease-in 0.3s;
+}
+
+.social-network-icon {
+  font-size: 2.5rem;
+}
+i {
+  color: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+i:hover {
+  color: orange;
+}
+
+/*      Cards in Section */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 30%;
+  border-radius: 3%;
+}
+@media screen and (max-width: 300px) {
+  .card {
+    width: 100%;
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  header > div > a,
+  footer > div:nth-child(1) {
+    font-size: 1.7rem;
+  }
+  .main-contact-page > .card {
+    height: 50rem;
+  }
+}
+.email-link {
+  text-decoration: none;
+  color: #203040;
+}
+.email-link:hover {
+  color: orange;
+  transition: 0.3s ease-in;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  padding: 2px 16px;
+}
+
+/*    Image in cards    */
+.card-img {
+  max-height: 40vh;
+  max-width: 11vw;
+}
+/*      Image in cards      */
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/*    Buttons   */
+button {
+  font-size: 1.2rem;
+  width: fit-content;
+}
+
+/*    Contact Page Main*/
+
+.grid-container-conatact-page {
+  height: 100vh;
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 7rem 1fr 7rem;
+}
+.header-contact-page {
+  grid-area: header;
+  background: #203040;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.main-contact-page {
+  height: 100vh;
+  grid-area: main;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 3rem;
+}
+.footer-contact-page {
+  grid-area: footer;
+  background: #203040;
+  font-size: 1.3rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.main-contact-page > div {
+  height: 35rem;
+  text-align: center;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+/*      Forms     */
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #203040;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  transition: 0.2s ease-in;
+  background-color: rgb(134, 89, 10);
+}
+
+.form-container {
+  border-radius: 3%;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+/*     Button in thank you page     */
+.thank-you-button {
+  background-color: #203040;
+  color: #fff;
+  height: 3.5rem;
+  border-radius: 3%;
+  box-shadow: 1px 1px 1px 1px grey;
+  width: 20rem;
+}
+.thank-you-button:hover {
+  transition: 0.2s ease-in;
+  background-color: rgb(134, 89, 10);
+}

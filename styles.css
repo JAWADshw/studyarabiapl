@@ -124,6 +124,11 @@ i:hover {
   main {
     display: block;
   }
+  .card {
+    margin: 3rem;
+    width: 90%;
+    font-size: 1.6rem;
+  }
 }
 
 @media screen and (min-width: 1500px) {

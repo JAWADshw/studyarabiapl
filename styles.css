@@ -18,14 +18,9 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  height: 50vh;
+  height: 100vh;
   color: #102030;
   font-size: 2rem;
-  margin: 0 auto;
-  margin-top: 2rem;
-  border-radius: 3%;
-  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem gray;
-  width: 50%;
 }
 
 .logo {

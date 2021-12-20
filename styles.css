@@ -15,11 +15,14 @@ body {
 /*    Backgorund images   */
 .main-index-page {
   height: 97vh;
+  /*
   background-image: url("images/background..jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   color: #102030;
+  */
+  
   font-size: 2rem;
 }
 

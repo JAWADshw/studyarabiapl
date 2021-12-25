@@ -6,33 +6,10 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  font-family: "Roboto", sans-serif;
-  font-family: "Oswald", sans-serif;
-  font-family: "Playfair Display", serif;
-  font-family: "PT Sans Narrow", sans-serif;
-}
-
-/*    Backgorund images   */
-.main-index-page {
-  height: 97vh;
-  /*
-  background-image: url("images/background..jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  color: #102030;
-  */
-  
-  font-size: 2rem;
 }
 
 .logo {
   width: 6rem;
-}
-.main-index-page > div {
-  text-align: center;
-  padding: 2rem;
-  margin: 0 auto;
 }
 
 /*   GRID LAYOUT   all pages except contact page */
@@ -51,6 +28,7 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   padding-left: 1rem;
+  font-size: 1.3rem;
 }
 
 main {
@@ -68,6 +46,17 @@ section {
   margin: 6rem;
   justify-content: space-evenly;
   flex-wrap: wrap;
+}
+.content-wrap {
+  margin: 8rem auto;
+  padding: 2rem;
+  box-shadow: 0px 1px 5px 1px #ccc;
+  border-radius: 10px;
+  font-size: 1.4rem;
+}
+.content-wrap:hover {
+  transition: 0.2s ease-in;
+  box-shadow: 0px 1px 20px 1px #ccc;
 }
 section > .card {
   margin: 2rem;
@@ -95,15 +84,24 @@ footer > div:nth-of-type(1) {
 }
 
 /*  Common style sheet   */
+.gray-color-text {
+  opacity: 35%;
+}
 header > div > a {
   color: #fff;
   text-decoration: none;
-  font-size: 1.5rem;
   margin: 1.6rem;
 }
 header > div > a:hover {
   color: orange;
   transition: ease-in 0.3s;
+}
+.fixed-whatsapp-icon {
+  height: 4.5rem;
+  width: 4.5rem;
+  position: fixed;
+  top: 90%;
+  right: 1%;
 }
 
 .social-network-icon {
@@ -164,10 +162,24 @@ i:hover {
   .social-network-icon {
     font-size: 2rem;
   }
+  .fixed-whatsapp-icon {
+    height: 4.5rem;
+    width: 4.5rem;
+    position: fixed;
+    top: 86%;
+    right: 1%;
+  }
+  .sidebar-nav {
+    display: none;
+  }
+  .gallery-img-block > img {
+    margin: 0rem auto;
+    padding: 0rem;
+  }
 }
 
 @media screen and (min-width: 1500px) {
-  header > div > a,
+  .nav-item,
   footer > div:nth-child(1) {
     font-size: 1.7rem;
   }
@@ -314,5 +326,94 @@ input[type="submit"]:hover {
 textarea {
   border-radius: 0.5rem;
   border: 0.1rem #ccc solid;
-  width: 99.1%;
+  width: 98%;
+  padding: 5px;
+  margin-right: -2px;
+}
+
+/* Tourism page*/
+.sidebar-nav {
+  transition: 0.3s ease-in-out;
+  height: 100vh;
+  position: fixed;
+  width: 20vw;
+  background-color: #203040;
+  margin: 0;
+  padding: 0;
+  top: 0;
+}
+.burger-icon {
+  position: inherit;
+  margin: 1.3rem;
+}
+.fas.fa-bars:hover {
+  color: orange;
+}
+
+.fas.fa-bars {
+  color: white;
+  font-size: 2.1rem;
+  text-decoration: none;
+}
+.sidebar-nav-item-special {
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.2rem;
+}
+.sidebar-nav-items {
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar-nav-item-special:hover,
+.sidebar-nav-items:hover {
+  background-color: orange;
+}
+.side-bar-text {
+  color: white;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  font-weight: 100;
+  font-size: 1.7rem;
+}
+.side-bar-text:hover {
+  color: #203040;
+}
+
+.collapse {
+  width: 3.9vw;
+  transition: 0.3s ease-in-out;
+}
+/*    Images in Gallery Page*/
+.img-gallery {
+  width: 45%;
+  height: 75%;
+  border-radius: 0.5rem;
+  margin-right: 25%;
+  transition: 0.3s ease-in-out;
+}
+.gallery-img-block {
+  display: inline-block;
+  margin: 0rem;
+  padding: 2.5rem;
+}
+.hide-text {
+  display: none;
+  background-color: #203040;
+}
+.img-block-after-side-bar-collapse {
+  padding-top: 3rem;
+  margin-right: 0%;
+  transition: 0.3s ease-in-out;
+}
+.img-gallery-collapse {
+  margin: 0;
+  margin-right: 3.9vw;
+}
+.no-background:hover {
+  background-color: transparent !important;
 }

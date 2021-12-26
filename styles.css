@@ -184,6 +184,9 @@ i:hover {
 }
 
 @media screen and (min-width: 1500px) {
+  h3 {
+    font-size: 2rem;
+  }
   .nav-item,
   footer > div:nth-child(1) {
     font-size: 1.7rem;
@@ -393,7 +396,6 @@ textarea {
 }
 .side-bar-text:hover {
   color: #203040;
-    padding-top: 1.3rem;
 }
 
 .collapse {
@@ -411,7 +413,7 @@ textarea {
 .gallery-img-block {
   display: inline-block;
   margin: 0rem;
-  
+  padding: 2.5rem;
 }
 .hide-text {
   display: none;

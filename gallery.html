@@ -15,18 +15,16 @@
 </head>
 <body>
     <div class="grid-container">
-        <div class="burger-icon"></div> 
         <header  style="justify-content: center;">
-                <div><a class="nav-item" href="index">الصفحة الرئيسية</a></div>
-                <div><a class="nav-item" href="universities">الجامعات</a></div>
-                <div><a class="nav-item" href="offers">العروض</a></div>
-                <div><a class="nav-item" href="gallery">السياحة</a></div>
-                <div><a class="nav-item" href="about">من نحن</a></div>
-                <div><a class="nav-item" href="contact">تواصل  معنا</a></div>          
+            <div><a class="nav-item" href="index">الصفحة الرئيسية</a></div>
+            <div><a class="nav-item" href="universities">الجامعات</a></div>
+            <div><a class="nav-item" href="offers">العروض</a></div>
+            <div><a class="nav-item" href="gallery">السياحة</a></div>
+            <div><a class="nav-item" href="about">من نحن</a></div>
+            <div><a class="nav-item" href="contact">تواصل  معنا</a></div>   
             <div>
                 <a href="index"><img class= "logo"src="images/logo.png" alt=""></a>
-              </div>
-        </header>
+            </div>
         </header>
         <main style="display: block; margin: -2rem auto; padding: 0;">       
            <div class="sidebar-nav " style="margin: 0;">
@@ -38,7 +36,8 @@
                 for (var i = 0; i<ims.length; i++){console.log(ims[i]);ims[i].classList.toggle('img-gallery-collapse')};
                 var eles = document.querySelectorAll('.sidebar-nav-items');
                 for (var i = 0; i<eles.length; i++){console.log(eles[i]);eles[i].classList.toggle('no-background')};
-                ">
+                var txt = document.querySelectorAll('.text');
+                for (var i = 0; i<txt.length; i++){txt[i].classList.toggle('text-after-collapse')};">
                 </a>
             </div>    
                 <div style="height:4.8rem;"></div>
@@ -88,17 +87,15 @@
                     </a>
                 </div>
             </div>  
-            <div class="gallery-img-block">
-                <img class="img-gallery" style="margin-top: 6rem;" src="images/Zell Am See.jpg" alt="">
-            </div>
-            <div class="gallery-img-block">
-                <img class="img-gallery"src="images/Zell Am See.jpg" alt="">
-            </div>
-            <div class="gallery-img-block">
+            <div class="university-card" style="margin: 0; padding-top:3rem;" >
+                <h3 class="text text-mobile">  النمسا</h2>
                 <img class="img-gallery" src="images/Zell Am See.jpg" alt="">
+                <p class="text" >النمسا مشهورة جدا بالجبال الطبيعية </p>
             </div>
-            <div class="gallery-img-block">
-                <img class="img-gallery" id="img1" src="images/Zell Am See.jpg" alt="">
+            <div class="university-card" style="margin: 0; padding-top:3rem;" >
+                <h3 class="text text-mobile">  النمسا</h2>
+                <img class="img-gallery" src="images/Zell Am See.jpg" alt="">
+                <p class="text" >النمسا مشهورة جدا بالجبال الطبيعية </p>
             </div>
         </main>
         <section>

@@ -22,31 +22,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="images/logo.png">
 </head>
-<body>
-    <div class="grid-container">
-      <header  style="justify-content: center;">
-            <div class="burger-icon"></div>
-                <div><a class="nav-item" href="index">الصفحة الرئيسية</a></div>
-                <div><a class="nav-item" href="universities">الجامعات</a></div>
-                <div><a class="nav-item" href="offers">العروض</a></div>
-                <div><a class="nav-item" href="gallery">السياحة</a></div>
-                <div><a class="nav-item" href="about">من نحن</a></div>
-                <div><a class="nav-item" href="contact">تواصل  معنا</a></div>          
+<body >
+    <div class="grid-container-university">
+        <header  style="justify-content: center;">
             <div>
-                <a href="index"><img class= "logo"src="images/logo.png" alt=""></a>
-              </div>
+                <a class="nav-item" href="/">الصفحة الرئيسية</a>
+                <a class="nav-item" href="universities">الجامعات</a>
+                <a class="nav-item" href="offers">العروض</a>
+                <a class="nav-item" href="gallery">السياحة</a>
+                <a class="nav-item" href="about">من نحن</a>
+                <a class="nav-item" href="contact">تواصل  معنا</a>           
+            </div>
+            <div>
+                <a href="/"><img class= "logo"src="images/logo.png" alt=""></a>
+            </div>
         </header>
-        <main style="display: block; margin: -2rem auto; padding: 0;">       
+        <main style="display: block; margin: 0; padding: 0;">       
            <div class="sidebar-nav " style="margin: 0;">
             <div class="burger-icon">
                 <a href="#img-1"class="fas fa-bars" onclick="document.querySelector('.sidebar-nav').classList.toggle('collapse'); var elements = document.querySelectorAll('.side-bar-text');
                 for (var i = 0; i<elements.length; i++){elements[i].classList.toggle('hide-text')};  var images = document.querySelectorAll('.gallery-img-block');
                 for (var i = 0; i<images.length; i++){images[i].classList.toggle('img-block-after-side-bar-collapse')};
                 var ims = document.querySelectorAll('.img-gallery');
-                for (var i = 0; i<ims.length; i++){console.log(ims[i]);ims[i].classList.toggle('img-gallery-collapse')};
+                for (var i = 0; i<ims.length; i++){ims[i].classList.toggle('img-gallery-collapse')};
                 var eles = document.querySelectorAll('.sidebar-nav-items');
-                for (var i = 0; i<eles.length; i++){console.log(eles[i]);eles[i].classList.toggle('no-background')};
-                ">
+                for (var i = 0; i<eles.length; i++){eles[i].classList.toggle('no-background')};
+                var txt = document.querySelectorAll('.text');
+                for (var i = 0; i<txt.length; i++){txt[i].classList.toggle('text-after-collapse')};">
                 </a>
             </div>    
                 <div style="height:4.8rem;"></div>
@@ -71,23 +73,24 @@
                     </a>
                 </div>
             </div>  
-            <div class="gallery-img-block">
-                <img class="img-gallery" style="margin-top: 6rem;" src="images/Zell Am See.jpg" alt="">
+            <div class="university-card" style="margin: 0; padding-top:5rem;" >
+                <h3 class="text">جامعة وارسو التفنية</h2>
+                <img class="img-gallery" src="images/WUT night building.jpg" alt="">
+                <h3 class="text" >تعتبر جامعة وارسو من افضل وارقى الجامعات البولندية</h3>
             </div>
-            <div class="gallery-img-block">
-                <img class="img-gallery"src="images/Zell Am See.jpg" alt="">
-            </div>
-            <div class="gallery-img-block">
-                <img class="img-gallery" src="images/Zell Am See.jpg" alt="">
-            </div>
-            <div class="gallery-img-block">
-                <img class="img-gallery" id="img1" src="images/Zell Am See.jpg" alt="">
-            </div>
-        </main>
-        <section>
+            <div class="university-card" style="margin: 0;" >
+                <h3 class="text">جامعة وارسو التفنية</h2>
+                <img class="img-gallery" src="images/WUT night building.jpg" alt="">
+                <h3 class="text" >تعتبر جامعة وارسو من افضل وارقى الجامعات البولندية</h3>
+            </div>     
+            <div class="university-card" style="margin: 0;" >
+                <h3 class="text">جامعة وارسو التفنية</h2>
+                <img class="img-gallery" src="images/WUT night building.jpg" alt="">
+                <h3 class="text" >تعتبر جامعة وارسو من افضل وارقى الجامعات البولندية</h3>
+            </div> 
             <a class='fixed-whatsapp-icon' href="https://wa.me/0048739592521" style="top: 92vh;right: 0.05vw;" target="_blank"> <img src="https://s3.ap-south-1.amazonaws.com/gotouniv/images/wa-ic.png" alt="whatsapp" >
-            </a>
-        </section>
+            </a> 
+        </main>
         <footer>
             <div>كل الحقوق محفوظة &copy;</div>
             <div>

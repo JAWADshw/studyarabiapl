@@ -175,6 +175,9 @@ i:hover {
     margin: 0rem auto;
     padding: 0rem;
   }
+   .text {
+    margin-right: 0% !important;
+  }
 }
 
 @media screen and (min-width: 1500px) {

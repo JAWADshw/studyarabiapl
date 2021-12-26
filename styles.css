@@ -175,7 +175,10 @@ i:hover {
     margin: 0rem auto;
     padding: 0rem;
   }
-   .text {
+  img.img-gallery {
+    margin-right: 5%;
+  }
+  .text {
     margin-right: 0% !important;
   }
 }

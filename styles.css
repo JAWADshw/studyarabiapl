@@ -15,8 +15,7 @@ body {
 /*   GRID LAYOUT   all pages except contact page */
 .grid-container {
   display: grid;
-  grid-template-areas: "header" "
-    " "section" "footer";
+  grid-template-areas: "header" "main" "section" "footer";
   grid-template-columns: 1fr;
   grid-template-rows: 8rem 1fr 1fr 8rem;
   height: 100vh;

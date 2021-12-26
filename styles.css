@@ -17,7 +17,7 @@ body {
   display: grid;
   grid-template-areas: "header" "main" "section" "footer";
   grid-template-columns: 1fr;
-  grid-template-rows: 9rem 1fr 1fr 9rem;
+  grid-template-rows: 8rem 1fr 1fr 8rem;
   height: 100vh;
 }
 header {
@@ -27,7 +27,6 @@ header {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-left: 1rem;
   font-size: 1.3rem;
 }
 
@@ -341,10 +340,12 @@ textarea {
   margin: 0;
   padding: 0;
   top: 0;
+  right: 0;
 }
 .burger-icon {
   position: inherit;
   margin: 1.3rem;
+  margin-top: 2.2rem;
 }
 .fas.fa-bars:hover {
   color: orange;
@@ -414,6 +415,28 @@ textarea {
   margin: 0;
   margin-right: 3.9vw;
 }
+
 .no-background:hover {
   background-color: transparent !important;
+}
+
+/*      UNIVERSITY PAGE   */
+.grid-container-university {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 8rem 1fr 8rem;
+  height: 100vh;
+}
+.text {
+  margin-right: 25%;
+  transition: 0.3s ease;
+}
+.text-after-collapse {
+  margin-left: 25%;
+  transition: 0.3s ease;
+}
+.university-card {
+  margin: 100rem;
+  padding: 2.5rem;
 }

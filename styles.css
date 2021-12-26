@@ -176,7 +176,7 @@ i:hover {
     padding: 0rem;
   }
   img.img-gallery {
-    margin-right: 0%;
+    margin-right: 5%;
   }
   .text {
     margin-right: 0% !important;
@@ -190,6 +190,9 @@ i:hover {
   }
   .main-contact-page > .card {
     height: 50rem;
+  }
+  p {
+    font-size: 1.6rem;
   }
 }
 .email-link {
@@ -386,6 +389,7 @@ textarea {
   height: 100%;
   font-weight: 100;
   font-size: 1.7rem;
+  padding-top: 1.3rem;
 }
 .side-bar-text:hover {
   color: #203040;
@@ -435,7 +439,7 @@ textarea {
   height: 100vh;
 }
 .text {
-  margin-right: 25%;
+  margin-right: 28%;
   transition: 0.3s ease;
 }
 .text-after-collapse {
@@ -443,6 +447,5 @@ textarea {
   transition: 0.3s ease;
 }
 .university-card {
-  margin: 100rem;
-  padding: 2.5rem;
+  padding: 0 2.5rem;
 }

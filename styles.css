@@ -393,6 +393,7 @@ textarea {
 }
 .side-bar-text:hover {
   color: #203040;
+    padding-top: 1.3rem;
 }
 
 .collapse {

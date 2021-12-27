@@ -353,6 +353,13 @@ textarea {
   padding: 0;
   top: 0;
   right: 0;
+   overflow: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+.sidebar-nav::-webkit-scrollbar {
+  display: none;
+}
 }
 .burger-icon {
   position: inherit;
@@ -384,7 +391,8 @@ textarea {
 .sidebar-nav-items:hover {
   background-color: orange;
 }
-.side-bar-text {
+
+r-text {
   color: white;
   text-decoration: none;
   width: 100%;

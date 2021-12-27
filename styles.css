@@ -379,14 +379,12 @@ textarea {
   text-decoration: none;
 }
 .sidebar-nav-item-special {
-  height: 7vh;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 1.2rem;
 }
 .sidebar-nav-items {
-  height: 7vh;
   display: flex;
   align-items: center;
   justify-content: center;

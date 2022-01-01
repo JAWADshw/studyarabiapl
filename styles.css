@@ -171,19 +171,12 @@ i:hover {
   .sidebar-nav {
     display: none;
   }
-  .gallery-img-block > img {
-    margin: 0rem auto;
-    padding: 0rem;
-  }
-  img.img-gallery {
-    margin-right: 5%;
-  }
-  .text {
-    margin-right: 0% !important;
+  .uni-card {
+    margin-left: 30vw;
   }
 }
 
-@media screen and (min-width: 1800px) {
+@media screen and (min-width: 1500px) {
   h2 {
     font-size: 3rem;
   }
@@ -396,6 +389,8 @@ textarea {
 .side-bar-text {
   color: white;
   text-decoration: none;
+  width: 100%;
+  height: 100%;
   font-weight: 100;
 }
 .side-bar-text:hover {
@@ -406,35 +401,19 @@ textarea {
   width: 3.9vw;
   transition: 0.3s ease-in-out;
 }
-/*    Images in Gallery Page*/
-.img-gallery {
-  width: 45%;
-  height: 75%;
-  border-radius: 0.5rem;
-  margin-right: 25%;
-  transition: 0.3s ease-in-out;
-}
-.gallery-img-block {
-  display: inline-block;
-  margin: 0rem;
-  padding: 2.5rem;
-}
+
 .hide-text {
   display: none;
   background-color: #203040;
 }
-.img-block-after-side-bar-collapse {
-  padding-top: 3rem;
-  margin-right: 0%;
-  transition: 0.3s ease-in-out;
-}
-.img-gallery-collapse {
-  margin: 0;
-  margin-right: 3.9vw;
-}
 
 .no-background:hover {
   background-color: transparent !important;
+}
+
+.img-gallery {
+  border-radius: 8px;
+  width: 44vw;
 }
 
 /*      UNIVERSITY PAGE   */
@@ -445,31 +424,24 @@ textarea {
   grid-template-rows: 8rem 1fr 8rem;
   height: 100vh;
 }
-.text {
-  margin-right: 28%;
-  transition: 0.3s ease;
+.active {
+  margin-left: 20vw;
+  transition: 0.6s ease-in-out;
 }
-.text-after-collapse {
-  margin-left: 25%;
-  transition: 0.3s ease;
+.uni-card {
+  padding: 0rem;
+  margin-top: 0.7rem;
+  margin-right: 24vw;
+  transition: 0.6s ease-in-out;
+  margin-bottom: 0;
 }
-.university-card {
-  padding: 0 2.5rem;
+.uni-card > p {
+  margin-top: 1rem;
+  margin: 1rem auto;
+  text-align: justify;
 }
 
-
-.iframe-container{
-  position: relative;
-  width: 60%;
-  padding-bottom: 56.25%; 
-  height: 0;
-  margin: 0 auto;
-  border-radius:10px;
-}
-.iframe-container iframe{
-  position: absolute;
-  top:0;
-  left: 0;
-  width: 100%;
-  height: 60%;
+p {
+  padding-top: 0.3rem;
+  width: 45vw;
 }

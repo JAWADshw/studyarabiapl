@@ -35,77 +35,79 @@
             </div>
         </header>
         <main style="display: block; margin: 0; padding: 0;">       
-           <div class="sidebar-nav " style="margin: 0;">
+           <div class="sidebar-nav " style="margin: 0; padding: 0;">
             <div class="burger-icon">
-                <a href="#img-1"class="fas fa-bars" onclick="document.querySelector('.sidebar-nav').classList.toggle('collapse'); var elements = document.querySelectorAll('.side-bar-text');
-                for (var i = 0; i<elements.length; i++){elements[i].classList.toggle('hide-text')};  var images = document.querySelectorAll('.gallery-img-block');
-                for (var i = 0; i<images.length; i++){images[i].classList.toggle('img-block-after-side-bar-collapse')};
-                var ims = document.querySelectorAll('.img-gallery');
-                for (var i = 0; i<ims.length; i++){ims[i].classList.toggle('img-gallery-collapse')};
+                <a href="#" class="fas fa-bars" onclick="document.querySelector('.sidebar-nav').classList.toggle('collapse'); var elements = document.querySelectorAll('.side-bar-text');
+                for (var i = 0; i<elements.length; i++){elements[i].classList.toggle('hide-text')};
                 var eles = document.querySelectorAll('.sidebar-nav-items');
                 for (var i = 0; i<eles.length; i++){eles[i].classList.toggle('no-background')};
-                var txt = document.querySelectorAll('.text');
-                for (var i = 0; i<txt.length; i++){txt[i].classList.toggle('text-after-collapse')};">
-                </a>
+                var eles = document.querySelectorAll('.uni-card');
+                for (var i = 0; i<eles.length; i++){eles[i].classList.toggle('active')};
+                ">
+               </a>
             </div>    
                 <div style="height:4.8rem;"></div>
                 <div class="sidebar-nav-items" >
                     <a href="#tech" class = "side-bar-text">
-                        <h2 class = "side-bar-text" > الجامعات التفنية</h2>
+                        <h3 class = "side-bar-text" > الجامعات التفنية</h3>
                     </a>
                 </div>
-                <div class="sidebar-nav-items">
+                <div class="sidebar-nav-items" style="padding-top: 2rem;">
                     <a href="#medicine" class = "side-bar-text">
-                        <h2 class = "side-bar-text">الجامعات الطبية</h2>
+                        <h3 class = "side-bar-text">الجامعات الطبية</h3>
                     </a>
                 </div>
                 <div class="sidebar-nav-items">
-                    <a href="#img1" class = "side-bar-text">
-                        <h2 class = "side-bar-text">الجامعات المختصة بادارة الاعمال</h2>
+                    <a href="#" class = "side-bar-text">
+                        <h3 class = "side-bar-text">الجامعات المختصة بادارة الاعمال</h3>
                     </a>
                 </div>
                 <div class="sidebar-nav-items sidebar-nav-item-special">
-                    <a href="#img1" class = "side-bar-text">
-                        <h2 class = "side-bar-text">معاهد اللغة الانجليزية</h2>
+                    <a href="#" class = "side-bar-text">
+                        <h3 class = "side-bar-text">معاهد اللغة الانجليزية</h3>
                     </a>
                 </div>
             </div>  
-            <div class="university-card" style="margin: 0; padding-top:3rem;" >
-                <h2 class="text text-mobile" id="tech">الجامعات التفنية</h2>
-                <h3 class="text text-mobile">جامعة وارسو التفنية</h3>
-                <img class="img-gallery" src="images/WUT night building.jpg" alt="">
-                <p class="text" >تعتبر جامعة وارسو من افضل وارقى الجامعات البولندية</p>
+            <div class="uni-card" style="padding-top:2rem ;">
+                <h2 id="tech">الجامعات التقنية</h2>
+                <h3>جامعة وارسو التفنية</h3>
+                <img class="img-gallery"src="images/WUT night building.jpg" alt="">
+                <p> تضم جامعة وارسو احد أهم معاهد التكنولوجيا الرائدة في بولندا وواحد من أكبر المعاهد في أوروبا الوسطى. في بولندا ، كانت أول جامعة متعددة التخصصات للتكنولوجيا هي المدرسة التحضيرية لمعهد التكنولوجيا ، التي تأسست عام 1826 ميلادي. وما زالت جامعة وارسو للتكنولوجيا تزرع تقاليدها. تتكون جامعة وارسو للتكنولوجيا من 20 كلية وتقدم تعليمًا على 3 مستويات (بكالوريوس ، ماجستير ، دكتوراه) في كل مجال تقريبًا من مجالات الهندسة والتكنولوجيا - بدءًا من الهندسة المدنية والهندسة المعمارية إلى الإلكترونيات الضوئية والمواد ، تكنولوجيا النانو والتكنولوجيا الحيوية</p>
             </div>
-            <div class="university-card" style="margin: 0;" >
-                <h3 class="text text-mobile">جامعة فروتسواف</h2>
-                <img class="img-gallery" src="images/wrocolaw.jpg" alt="">
-                <p class="text" >تعتبر جامعة وارسو من افضل وارقى الجامعات البولنديةعتبر جامعة وارسو من افضل وارقى الجامعات البولنديةعتبر جامعة  من افضل وارقى الجامعات البولندية</p>
+            <div class="uni-card">
+                <h3>جامعة وودج التقنية </h3>
+                <img class="img-gallery"src="images/lodz.jpg" alt="">
+                <p>تم إنشاء جامعة لودز للتكنولوجيا في عام 1945 وتطورت لتصبح واحدة من أكبر الجامعات التقنية في بولندا. يقع في الأصل في مبنى مصنع قديم ، ويغطي اليوم ما يقرب من 200000 متر مربع في أكثر من 70 مبنى منفصل</p>
             </div>
-            <div class="university-card" style="margin: 0;" >
-                <h3 class="text text-mobile">جامعة وودج التفنية</h2>
-                <img class="img-gallery" src="images/lodz.jpg" alt="">
-                <p class="text" >تعتبر جامعة وودج من اقدم الجامعات البولندية</p>
+            <div class="uni-card">
+                <h3>جامعة قدانسك التقنية </h3>
+                <img class="img-gallery"src="images/gdansk university of technology.jpg" alt="">
+               <p>جامعة غدانسك للتكنولوجيا هي جامعة تقنية في منطقة Wrzeszcz بمدينة غدانسك ، وهي واحدة من أقدم الجامعات في بولندا. تضم ثماني كليات وتضم 41 مجالًا دراسيًا وأكثر من 18 ألف طالب جامعي ، بالإضافة إلى حوالي 626 طالب دكتوراه.</p>
             </div>
-            <div class="university-card" style="margin: 0;" >
-                <h3 class="text text-mobile">جامعة بوزنان التفنية</h2>
-                <img class="img-gallery" src="images/poznan.jpg" alt="">
-                <p class="text" >تعتبر جامعة وارسو من افضل وارقى الجامعات البولنديةعتبر جامعة وارسو من افضل وارقى من  وارقى الجامعات البولندية</p>
+            <div class="uni-card">
+                <h3>جامعة لوبلين التقنية </h3>
+                <img class="img-gallery"src="images/lublin university of technology.jpg" alt="">
+                <p style="text-align: center;">جامعة لوبلين للتكنولوجيا هي جامعة هندسية في لوبلين ، بولندا. تأسست في 13 مايو 1953 وتضم حاليًا 7787 طالبًا</p>
             </div>
-            <div class="university-card" style="margin: 0;" >
-                <h3 class="text text-mobile">جامعة بياوستك التفنية</h2>
-                <img class="img-gallery" src="images/bialstek.jpg" alt="">
-                <p class="text" >تعتبر جامعة وارسو من افضل وارقى الجامعات البولنديةعتبر جامعة  من لبولندية</p>
+            <div class="uni-card">
+                <h3>جامعة بوزنان التقنية </h3>
+                <img class="img-gallery"src="images/poznan.jpg" alt="">
+                <p>جامعة بوزنان للتكنولوجيا PUT هي جامعة في بوزنان ، بولندا. تُعرف جامعة بوزنان للتكنولوجيا بأنها واحدة من أفضل الجامعات التقنية في بولندا. صنفت URAP PUT على أنها في أفضل 6٪ من جامعات العالم وصنفها Webometrics في لا. 842 in the world بواسطة Google citation لعام 2015.</p>
             </div>
-
-            <!--   Medicine -->
-            <div class="university-card" style="margin: 0; padding-top:3rem;" >
-                <h2 class="text text-mobile" id="medicine">الجامعات الطبية</h2>
-                <h3 class="text text-mobile">جامعة وارسو الطبية</h3>
-                <img class="img-gallery" src="images/medical university of warsaw.jpg" alt="">
-                <p class="text" >تعتبر جامعة وارسو من افضل وارقى الجامعات البولندية</p>
+            <div class="uni-card">
+                <h3>جامعة وارسو </h3>
+                <img class="img-gallery"src="images/university of warsaw.jpg" alt="">
+                <p>"جامعة وارسو (UW) ،  تأسست عام 1816 ميلادي، هي أعلى جامعة مرتبة من ناحية الأبحاث الأكاديمية في بولندا. تم تصنيف جامعة وارسو ضمن أفضل 4٪ من الجامعات ذات المستوى العالمي ومعترف بها من قبل التصنيفات الدولية المرموقة مثل التصنيف الأكاديمي للجامعات العالمية (AKA Shanghai Ranking) ، QS Top Universities ، The Times Higher Education World University Rankings.
+                يوجد في UW حاليًا ما يقرب من 66000 طالب. توظف أكثر من 6200 شخص ، من بينهم 3240مدرسًا أكاديميًا. حاليًا ، هناك 19 كلية و 26 وحدة أخرى ، بما في ذلك مركزالتقنيات الجديدة ومركز الأبحاث قبل السريرية والتكنولوجيا ومركز نقل التكنولوجيابالجامعة.</p>
             </div>
-
-            <a class='fixed-whatsapp-icon' href="https://wa.me/48739592521" target="_blank"> <img src="https://s3.ap-south-1.amazonaws.com/gotouniv/images/wa-ic.png" alt="whatsapp" >
+           
+            <div class="uni-card">
+                <h3>جامعة وارسو لعلوم الحياة</h3>
+                <img class="img-gallery"src="images/universitiy of science.jpg" alt="">
+                <p>تعد جامعة وارسو لعلوم الحياة (SGGW) أقدم مدرسة أكاديمية زراعية في بولندا ، ويعود  تاريخها إلى عام 1816. تتكون الجامعة حاليًا من 13 كلية ؛ هناك 27000 طالب مسجلين.  يمكنهم الاختيار من بين 34 تخصصًا و 61 تخصصًا. يغطي البحث والتعليم المجال الكامل  للعلوم المتعلقة بالزراعة ، من بين أمور أخرى: هندسة المناظر الطبيعية ، وعلم الأحياء ، والتكنولوجيا الحيوية ، والاقتصاد ، والمالية والمصرفية ، والتخطيط الإقليمي ،  والمعلوماتية والاقتصاد القياسي ، والهندسة البيئية ، والغابات ، وحماية البيئة ،  والبستنة ، والزراعة ، علم الاجتماع ، تقنيات الزراعة والغابات ، تكنولوجيا الخشب ، علوم السلع ، السياحة والترفيه ، تكنولوجيا الغذاء ، التغذية البشرية ، الطب البيطري ،  هندسة الإدارة والإنتاج ، الإدارة والتسويق ، علوم الحيوان. ضمن برنامج Erasmus + ،  تقدم SGGW مجموعة واسعة من الموضوعات التي يتم تدريسها باللغة الإنجليزية.</p>
+            </div>
+              
+            <a class='fixed-whatsapp-icon' href="https://wa.me/0048739592521" style="top: 92vh;right: 0.05vw;" target="_blank"> <img src="https://s3.ap-south-1.amazonaws.com/gotouniv/images/wa-ic.png" alt="whatsapp" >
             </a> 
         </main>
         <footer>
@@ -115,8 +117,8 @@
               <a class="social-network-icon" href="https://www.twitter.com/studyarabiapl" target="_blank"><i class="fab fa-twitter"></i></a>
               <a class="social-network-icon" href="https://www.instagram.com/studyarabiapl" target="_blank"><i class="fab fa-instagram"></i></a>
               <a class="social-network-icon" href="https://www.facebook.com/profile.php id=100014360239072" target="_blank"><i class="fab fa-linkedin"></i></a>
-              <a class="social-network-icon" href="https://wa.me/48739592521" target="_blank"><i class="fab fa-whatsapp"></i></a>
-              <a class="social-network-icon" href="https://www.tiktok.com/@studyarabiapl" target="_blank"><i class="fab fa-tiktok"></i></a>
+              <a class="social-network-icon" href="https://wa.me/0048739592521" target="_blank"><i class="fab fa-whatsapp"></i></a>
+              <a class="social-network-icon" href="https://wa.me/0048739592521" target="_blank"><i class="fab fa-tiktok"></i></a>
            </div>
         </footer>
     </div>
